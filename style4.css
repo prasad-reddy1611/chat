@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Chat container */
+  #chat-container {
+    background-color: #D1B1CB;
+    /* background: linear-gradient(135deg, #DDCAD9, #D1B1CB, #7C616C); */
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    padding: 20px;
+    overflow: hidden;
+  }
+  
+  /* Chatbox styles */
+  #chat-box {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 10px;
+    /* background-color: #f9f9f9; */
+    background-image: url('/boosting-customer-experience-with-empathetic-ai-chatbots-by-bitext-1-1080x675.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Message styling */
+  .message {
+    max-width: 70%;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  
+  /* User message */
+  .message.user {
+    background-color: #007bff;
+    color: white;
+    align-self: flex-end;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 10px;
+  }
+  
+  /* Bot message */
+  .message.bot {
+    background-color: #e5e5ea;
+    color: black;
+    align-self: flex-start;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 0;
+  }
+  
+  /* Input field */
+  #message-input {
+    /* width: calc(100% - 90px); */
+    height: 25px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-right: 10px;
+    font-size: 16px;
+    outline: none;
+    margin-bottom: 30px;
+  }
+  
+ #send-btn {
+    background-color: #7C616C;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 17px;
+    outline: none;
+    transition: background-color 0.2s;
+    width: 90px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/* Send button hover */
+#send-btn:hover {
+    background-color: #3C7A89;
+}
+
+  
+  /* Responsive adjustments */
+  @media (max-width: 480px) {
+    #chat-container {
+      width: 100%;
+      height: 100%;
+      border-radius: 0;
+    }
+  
+    #message-input {
+      width: calc(100% - 60px);
+    }
+  
+    #send-btn {
+      width: 50px;
+      padding: 10px;
+    }
+  }
